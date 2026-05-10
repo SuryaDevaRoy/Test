@@ -1,1 +1,1 @@
-echo "Welcome to $city for $dog"
+echo "Welcome to $1 for $2"
