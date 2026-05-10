@@ -1,0 +1,10 @@
+#!bin/bash
+Total-memory=$(free -m | grep -i mem |awk -F :" "'{print $2})
+Total_Available=$(free -m | grep -i mem |awk -F :" "'{print $7})
+Used=$[ expr (Total-memory - Total_Available) ];
+  
+
+
+
+#The awk command in Linux is a powerful text-processing tool used to scan files line by line, split each line into fields, and perform actions like printing, filtering, or transforming data. It’s especially useful for working with logs, CSVs, and structured text.
+
